@@ -1,0 +1,89 @@
+1)
+package costo_terreno;
+import java.util.Scanner;
+//Programa para calcular el costo de un terreno
+public class Costo_terreno {
+
+    public static void main(String[] args) {
+        Scanner Entrada = new Scanner(System.in);
+        
+        //Declaración de variables
+        int costo_terreno, ancho, longitud, costo_metro;
+        
+        //Ingreso de datos
+        System.out.print("Ingrese el ancho del terreno en metros");
+        ancho=Entrada.nextInt();
+        System.out.print("Ingrese la longitud del terreno en metros");
+        longitud=Entrada.nextInt();
+        System.out.print("Ingrese el costo por metro cuadrado");
+        costo_metro=Entrada.nextInt();
+        
+        //Cálculo del costo
+        costo_terreno = (ancho * longitud) * costo_metro;
+
+        //Salida de datos
+        System.out.print("El costo total del terreno es de: "+costo_terreno+"\n");
+    }
+}
+
+2)
+package horas;
+import java.util.Scanner;
+// Programa para calcular el número de días, minutos y segundos que tiene cierto número de horas
+public class Horas {
+
+    public static void main(String[] args) {
+        Scanner Entrada = new Scanner(System.in);
+        
+        //Declaración de variables
+        int nro_horas, minutos, segundos, dias;
+        
+        //Ingreso de datos
+        System.out.print("Ingrese el número de horas: ");
+        nro_horas=Entrada.nextInt();
+        
+        //Cálculo de minutos, segundos y días
+        minutos = nro_horas * 60;
+        segundos = nro_horas * 3600;
+        dias = nro_horas / 24;
+
+        //Salida de datos
+        System.out.print("En "+nro_horas+" horas hay "+dias+" días "+minutos+" minutos y "+segundos+" segundos\n");
+    }
+    
+}
+
+3)
+package estatura;
+import java.util.Scanner;
+// Programa para calcular la media aritmética entra 5 personas
+public class Estatura {
+
+    public static void main(String[] args) {
+        Scanner datos = new Scanner(System.in);
+        
+        //Declaracion de variables
+        double est_persona1, est_persona2, est_persona3, est_persona4, est_persona5;
+        double suma_est, total;
+        
+        //Ingreso de datos
+        System.out.print("Ingrese la estatura de la primera persona");
+        est_persona1=datos.nextDouble();
+        System.out.print("Ingrese la estatura de la segunda persona");
+        est_persona2=datos.nextDouble();
+        System.out.print("Ingrese la estatura de la tercera persona");
+        est_persona3=datos.nextDouble();
+        System.out.print("Ingrese la estatura de la cuarta persona");
+        est_persona4=datos.nextDouble();
+        System.out.print("Ingrese la estatura de la quinta persona");
+        est_persona5=datos.nextDouble();
+        
+        //Cálculo de la media aritmética de las estaturas
+        suma_est = est_persona1 + est_persona2 + est_persona3 + est_persona4 + est_persona5;
+        total = suma_est / 5;
+        
+        //Salida de datos
+        System.out.print("El promedio de las 5 estaturas es de: "+total+"\n");
+    }
+  
+}
