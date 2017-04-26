@@ -9,7 +9,7 @@ public class JavaApplication1 {
         
         int cont, suma, n, serie;
         
-        System.out.print("Cuántos números quiere calcular en la serie?");
+        System.out.print("CuÃ¡ntos nÃºmeros quiere calcular en la serie?");
         n=Entrada.nextInt();
         
         cont= 0;
@@ -17,8 +17,8 @@ public class JavaApplication1 {
         serie = 1;
         while(cont < n){
             serie = serie * (n + suma)/2;
-            System.out.print(serie);
             n= n-1;
         }
+        System.out.print(serie);
     }
 }
