@@ -1,0 +1,29 @@
+package javaapplication1;
+import java.util.Scanner;
+
+public class JavaApplication1 {
+
+
+    public static void main(String[] args) {
+        Scanner Entrada = new Scanner(System.in);
+        
+        int n, cont, horas_dia, sueldo_mensual;
+        String nombre;
+        
+        System.out.print("Ingrese cuantos usuarios son");
+        n = Entrada.nextInt();
+        
+        cont = 0;
+        while(cont < n){
+            System.out.print("Ingrese su nombre usuario "+cont+"\n");
+            nombre = Entrada.next();
+            System.out.print("Las horas trabajadas por día\n");
+            horas_dia = Entrada.nextInt();
+            
+            sueldo_mensual = (horas_dia * 15) * 20;
+            
+            System.out.print("El sueldo mensual de "+nombre+" es de "+sueldo_mensual+"/n");
+            cont = 1;
+        }
+    }
+}
