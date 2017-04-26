@@ -17,13 +17,13 @@ public class JavaApplication1 {
         while(cont < n){
             System.out.print("Ingrese su nombre usuario "+cont+"\n");
             nombre = Entrada.next();
-            System.out.print("Las horas trabajadas por día\n");
+            System.out.print("Las horas trabajadas por dÃ­a\n");
             horas_dia = Entrada.nextInt();
             
             sueldo_mensual = (horas_dia * 15) * 20;
             
             System.out.print("El sueldo mensual de "+nombre+" es de "+sueldo_mensual+"/n");
-            cont = 1;
+            cont++;
         }
     }
 }
