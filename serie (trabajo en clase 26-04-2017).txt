@@ -1,0 +1,24 @@
+package javaapplication1;
+import java.util.Scanner;
+
+public class JavaApplication1 {
+
+
+    public static void main(String[] args) {
+        Scanner Entrada = new Scanner(System.in);
+        
+        int cont, suma, n, serie;
+        
+        System.out.print("Cuántos números quiere calcular en la serie?");
+        n=Entrada.nextInt();
+        
+        cont= 0;
+        suma = 1;
+        serie = 1;
+        while(cont < n){
+            serie = serie * (n + suma)/2;
+            System.out.print(serie);
+            n= n-1;
+        }
+    }
+}
