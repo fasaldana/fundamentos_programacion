@@ -18,6 +18,7 @@ public class JavaApplication1 {
         while(cont < n){
             serie = serie * (n + suma)/2;
             n= n-1;
+            suma=suma +1;
         }
         System.out.print(serie);
     }
